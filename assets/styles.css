@@ -1,0 +1,13 @@
+body {
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.nav-item {
+    color: white;
+}
