@@ -50,3 +50,21 @@ a:hover {
     height: 40px;
     color: white;
 }
+
+.grid-img {
+    width: 100%;
+    height: 100%
+}
+
+.grid-title {
+    font-size: 24px;
+}
+
+.main-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.padding {
+    padding-bottom: 50px;
+}
