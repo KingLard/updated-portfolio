@@ -75,3 +75,13 @@ a:hover {
     height: 100%;
     padding-bottom: 20px;
 }
+
+.nav-link {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
