@@ -84,4 +84,13 @@ a:hover {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 60px;
+    color: white;
+}
+
+.con-link {
+    color: white;
+}
+
+.submit {
+    width: 100px;
 }
