@@ -94,3 +94,98 @@ a:hover {
 .submit {
     width: 100px;
 }
+
+
+
+@media screen and (max-width: 991px) {
+    
+
+    .main-header {
+        font-size: 60px;
+    }
+
+    .brand {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    .main-header {
+        font-size: 45px;
+    }
+    
+    .brand {
+        display: none;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 525px) {
+    
+
+    .main-header {
+        font-size: 42px;
+    }
+    
+    .brand {
+        display: none;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 494px) {
+    
+
+    .main-header {
+        font-size: 38px;
+    }
+    
+    .brand {
+        display: none;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 430px) {
+    
+
+    .main-header {
+        font-size: 34px;
+    }
+    
+    .brand {
+        display: none;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%
+    }
+    
+    
+}
