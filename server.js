@@ -1,23 +1,29 @@
 const express = require('express')
 const nodemailer = require('nodemailer')
 const path = require('path')
+const bodyParser = require('body-parser'); 
 require('dotenv').config()
 
 
+
+
 const app = express();
+app.use(bodyParser.json()); 
 
 const PORT = process.env.PORT || 3000
 
 app.use(express.static("public"));
+app.use(express.json({limit: '1mb'}))
+
+
+app.post('/myform', function(req, res) {
+    console.log(req.body)
+})
 
 
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname + '/index.html'))
-// })
 
-
-const email = function(email, topic, message) {
+const sendEmail = function(email, topic, message) {
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
