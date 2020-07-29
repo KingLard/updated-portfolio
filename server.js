@@ -79,9 +79,9 @@ app.post('/myform', function(req, res) {
     
     transporter.sendMail(mailOptions, (err, data) => {
         if (err) {
-            alert('error occured', err)
+            res.send('unable to send email')
         } else {
-            alert('email sent')
+            res.send('Email Sent!')
         }
     })
 

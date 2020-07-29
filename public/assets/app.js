@@ -19,7 +19,7 @@
 
     $('#emailSubmit').on('click', async function() {
         event.preventDefault()
-
+        alert('Email Sent!')
         const email = $('#email').val()
         const topic = $('#topic').val()
         const message = $('#message').val()
