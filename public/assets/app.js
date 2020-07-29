@@ -34,13 +34,15 @@
             body: JSON.stringify(info)
         }
 
-        fetch('/myform', options)
-
+        const response = await fetch('/myform', options)
+        const data = await response.json()
+        console.log(data)
+        
 
     
-        await $.post("/myform", info, function(data, status) {
-            alert(data + " " + status)
-        } )
+        // await $.post("/myform", info, function(data, status) {
+        //     alert(data + " " + status)
+        // } )
     })
 
     

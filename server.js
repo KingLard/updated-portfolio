@@ -2,6 +2,7 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const path = require('path')
 const bodyParser = require('body-parser'); 
+const { response } = require('express');
 require('dotenv').config()
 
 
@@ -18,6 +19,18 @@ app.use(express.json({limit: '1mb'}))
 
 app.post('/myform', function(req, res) {
     console.log(req.body)
+    const data = req.body
+    let email = data.email
+    let topic = data.topic
+    let message = data.message
+    
+    res.json({
+        status: 'success',
+        email,
+        topic, 
+        message
+    })
+
 })
 
 
@@ -42,9 +55,9 @@ const sendEmail = function(email, topic, message) {
     
     transporter.sendMail(mailOptions, (err, data) => {
         if (err) {
-            console.log('error occured', err)
+            alert('error occured', err)
         } else {
-            console.log('email sent')
+            alert('email sent')
         }
     })
 
