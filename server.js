@@ -36,7 +36,7 @@ app.post('/myform', function(req, res) {
             pass: process.env.PASSWORD
         },
         tls: {
-            rejectUnauthorized: false;
+            rejectUnauthorized: false
         }
     })
     
