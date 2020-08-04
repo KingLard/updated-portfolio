@@ -54,10 +54,11 @@ app.post('/myform', function(req, res) {
             
         }
 
+        alert('email sent!')
 
     })
 
-   res.render('index')
+   
 
     
     
