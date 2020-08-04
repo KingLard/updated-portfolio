@@ -57,7 +57,7 @@ app.post('/myform', function(req, res) {
 
     })
 
-   res.send('/index')
+   res.render('index')
 
     
     
