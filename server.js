@@ -49,7 +49,7 @@ app.post('/myform', function(req, res) {
 
     })
 
-    res.send('email sent!')
+   res.send('/index')
 
     
     
