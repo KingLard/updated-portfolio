@@ -39,10 +39,7 @@
         console.log(data)
         
 
-    
-        // await $.post("/myform", info, function(data, status) {
-        //     alert(data + " " + status)
-        // } )
+
     })
 
     
