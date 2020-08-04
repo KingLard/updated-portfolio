@@ -6,8 +6,6 @@ const { response } = require('express');
 require('dotenv').config()
 
 
-
-
 const app = express();
 
 
@@ -31,10 +29,14 @@ app.get('*', (request, response) => {
 app.post('/myform', function(req, res) {
     const data = req.body  
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        secure: true,
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
+        },
+        tls: {
+            rejectUnauthorized: false;
         }
     })
     
