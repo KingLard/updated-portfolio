@@ -20,36 +20,6 @@ app.use(express.json({limit: '1mb'}))
 
 
 
-
-// const sendEmail = function(email, topic, message) {
-
-    // let transporter = nodemailer.createTransport({
-    //     service: 'gmail',
-    //     auth: {
-    //         user: process.env.EMAIL,
-    //         pass: process.env.PASSWORD
-    //     }
-    // })
-    
-    // let mailOptions = {
-    //     from: email,
-    //     to: 'brettl0407@gmail.com',
-    //     subject: topic,
-    //     text: message
-    // }
-    
-    // transporter.sendMail(mailOptions, (err, data) => {
-    //     if (err) {
-    //         alert('error occured', err)
-    //     } else {
-    //         alert('email sent')
-    //     }
-    // })
-
-// }
-
-
-
 app.post('/myform', function(req, res) {
     console.log(req.body)
     const data = req.body
@@ -59,9 +29,9 @@ app.post('/myform', function(req, res) {
     
     res.json({
         status: 'success',
-        email,
-        topic, 
-        message
+        email: email,
+        topic: topic, 
+        message: message
     })
 
     let transporter = nodemailer.createTransport({
